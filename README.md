@@ -57,17 +57,59 @@ The envelope follower uses separate attack and release coefficients with optiona
   - macOS: Xcode 13+
   - Windows: Visual Studio 2022
 
-### Building with CMake
+### Setup — Clone JUCE
+
+JUCE is not bundled with this repo. Clone it as a sibling directory (or anywhere you prefer):
 
 ```bash
-# Clone or download JUCE to a location, e.g., ~/JUCE
+cd /path/to/your/projects
+git clone --branch 8.0.8 --depth 1 https://github.com/juce-framework/JUCE.git
+```
 
-# Configure
+### Building with Xcode (macOS)
+
+The repo includes a pre-built Xcode project with a `JUCE_DIR` build setting that controls where JUCE headers are resolved from.
+
+1. **Open the project:**
+   ```bash
+   open Builds/MacOSX/XRVST_Plugins.xcodeproj
+   ```
+
+2. **Update `JUCE_DIR` if needed:**
+   The project defaults to `JUCE_DIR = /Users/kjolly/Documents/Github/JUCE`. If your JUCE clone is elsewhere:
+   - Select the **XRVST_Plugins - VST3** target
+   - Go to **Build Settings** → search for `JUCE_DIR`
+   - Change the path to your JUCE installation
+
+3. **Build:** Press **⌘B**
+
+The built `.vst3` plugin will be copied to `~/Library/Audio/Plug-Ins/VST3/` automatically.
+
+### Building with CMake
+
+CMake can generate Xcode projects or Makefiles. This is the recommended approach for cross-platform builds.
+
+```bash
+# Xcode project (macOS)
 mkdir build && cd build
-cmake .. -DJUCE_DIR=~/JUCE
+cmake .. -G Xcode -DJUCE_DIR=/path/to/JUCE
+open XRVST_Plugins.xcodeproj
 
-# Build
+# Or build directly from the command line
+mkdir build && cd build
+cmake .. -DJUCE_DIR=/path/to/JUCE -DCMAKE_BUILD_TYPE=Release
 cmake --build . --config Release
+```
+
+### Building with the build script
+
+```bash
+# Pass JUCE path as an argument
+./build.sh /path/to/JUCE
+
+# Or set as an environment variable
+export JUCE_DIR=/path/to/JUCE
+./build.sh
 ```
 
 ### Building with Projucer
