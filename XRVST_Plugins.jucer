@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="aB1234" name="XRVST_Plugins" projectType="audioplug"
+              useAppConfig="0" addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1"
+              companyName="Meta Audio" companyCopyright="Copyright (c) 2024 Meta"
+              companyWebsite="https://meta.com" companyEmail=""
+              pluginFormats="buildVST3" pluginName="Broadband Compressor V2"
+              pluginDesc="Standard dynamic range compressor with soft-knee curve"
+              pluginManufacturer="Meta Audio" pluginManufacturerCode="Meta"
+              pluginCode="BBC2" pluginChannelConfigs="{1,1},{2,2}"
+              pluginIsSynth="0" pluginWantsMidiIn="0" pluginProducesMidiOut="0"
+              pluginIsMidiEffectPlugin="0" pluginEditorRequiresKeys="0"
+              pluginAUExportPrefix="XRVST_PluginsAU"
+              pluginAAXCategory="2" bundleIdentifier="com.meta.xrvst-plugins"
+              version="1.0.0" defines="" cppLanguageStandard="17">
+  <MAINGROUP id="mainGroup" name="XRVST_Plugins">
+    <GROUP id="sourceGroup" name="Source">
+      <GROUP id="dspGroup" name="DSP">
+        <FILE id="utilities" name="Utilities.h" compile="0" resource="0"
+              file="Source/DSP/Utilities.h"/>
+        <FILE id="levelEstimator" name="LevelEstimator.h" compile="0" resource="0"
+              file="Source/DSP/LevelEstimator.h"/>
+        <FILE id="compressionCurve" name="CompressionCurve.h" compile="0" resource="0"
+              file="Source/DSP/CompressionCurve.h"/>
+        <FILE id="delayLine" name="DelayLine.h" compile="0" resource="0"
+              file="Source/DSP/DelayLine.h"/>
+      </GROUP>
+      <GROUP id="guiGroup" name="GUI">
+        <FILE id="gainReductionMeter" name="GainReductionMeter.h" compile="0" resource="0"
+              file="Source/GUI/GainReductionMeter.h"/>
+        <FILE id="transferCurve" name="TransferCurve.h" compile="0" resource="0"
+              file="Source/GUI/TransferCurve.h"/>
+        <FILE id="customLookAndFeel" name="CustomLookAndFeel.h" compile="0" resource="0"
+              file="Source/GUI/CustomLookAndFeel.h"/>
+      </GROUP>
+      <FILE id="parameters" name="Parameters.h" compile="0" resource="0"
+            file="Source/Parameters.h"/>
+      <FILE id="processorH" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="processorCpp" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="editorH" name="PluginEditor.h" compile="0" resource="0"
+            file="Source/PluginEditor.h"/>
+      <FILE id="editorCpp" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX" extraLinkerFlags="" extraDefs=""
+               extraCompilerFlags="-Wall -Wextra" xcodeValidArchs="arm64,x86_64">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="XRVST_Plugins"
+                       optimisation="1" osxCompatibility="10.13"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="XRVST_Plugins"
+                       optimisation="3" osxCompatibility="10.13"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path=""/>
+        <MODULEPATH id="juce_audio_devices" path=""/>
+        <MODULEPATH id="juce_audio_formats" path=""/>
+        <MODULEPATH id="juce_audio_plugin_client" path=""/>
+        <MODULEPATH id="juce_audio_processors" path=""/>
+        <MODULEPATH id="juce_audio_utils" path=""/>
+        <MODULEPATH id="juce_core" path=""/>
+        <MODULEPATH id="juce_data_structures" path=""/>
+        <MODULEPATH id="juce_events" path=""/>
+        <MODULEPATH id="juce_graphics" path=""/>
+        <MODULEPATH id="juce_gui_basics" path=""/>
+        <MODULEPATH id="juce_gui_extra" path=""/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+    <VS2022 targetFolder="Builds/VisualStudio2022" extraLinkerFlags="" extraDefs=""
+            extraCompilerFlags="/W4">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="XRVST_Plugins"
+                       optimisation="1"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="XRVST_Plugins"
+                       optimisation="3"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path=""/>
+        <MODULEPATH id="juce_audio_devices" path=""/>
+        <MODULEPATH id="juce_audio_formats" path=""/>
+        <MODULEPATH id="juce_audio_plugin_client" path=""/>
+        <MODULEPATH id="juce_audio_processors" path=""/>
+        <MODULEPATH id="juce_audio_utils" path=""/>
+        <MODULEPATH id="juce_core" path=""/>
+        <MODULEPATH id="juce_data_structures" path=""/>
+        <MODULEPATH id="juce_events" path=""/>
+        <MODULEPATH id="juce_graphics" path=""/>
+        <MODULEPATH id="juce_gui_basics" path=""/>
+        <MODULEPATH id="juce_gui_extra" path=""/>
+      </MODULEPATHS>
+    </VS2022>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+</JUCERPROJECT>

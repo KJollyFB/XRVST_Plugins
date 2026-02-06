@@ -1,0 +1,41 @@
+# Build output
+build/
+cmake-build-*/
+
+# Xcode
+Builds/MacOSX/build/
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+DerivedData/
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+*.xcscmblueprint
+
+# JUCE
+JuceLibraryCode/
+*.component
+*.vst3
+*.vst
+*.au
+
+# IDE
+.vs/
+.vscode/
+*.user
+*.suo
+*.ncb
+*.opendb
+*.VC.db
+*.ipch
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
