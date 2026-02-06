@@ -3,45 +3,45 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A000001 /* PluginProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A000001; };
-		1A000002 /* PluginEditor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A000002; };
-		1A000003 /* include_juce_audio_basics.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2A000010; };
-		1A000004 /* include_juce_audio_devices.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2A000011; };
-		1A000005 /* include_juce_audio_formats.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2A000012; };
-		1A000006 /* include_juce_audio_processors.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2A000013; };
-		1A000007 /* include_juce_audio_utils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2A000014; };
-		1A000008 /* include_juce_core.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2A000015; };
-		1A000009 /* include_juce_data_structures.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2A000016; };
-		1A00000A /* include_juce_events.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2A000017; };
-		1A00000B /* include_juce_graphics.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2A000018; };
-		1A00000C /* include_juce_gui_basics.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2A000019; };
-		1A00000D /* include_juce_gui_extra.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2A00001A; };
-		1A00000E /* include_juce_audio_plugin_client_VST3.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2A00001B; };
-		1A00000F /* include_juce_audio_plugin_client_Standalone.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2A00001C; };
-		1A000031 /* include_juce_graphics_Harfbuzz.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A00001D; };
-		1A000032 /* include_juce_graphics_Sheenbidi.c in Sources */ = {isa = PBXBuildFile; fileRef = 2A00001E; };
-		1A000033 /* include_juce_core_CompilationTime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A00001F; };
-		1A000020 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A000001; };
-		1A000021 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A000002; };
-		1A000022 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A000003; };
-		1A000023 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A000004; };
-		1A000024 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A000005; };
-		1A000025 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A000006; };
-		1A000026 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A000007; };
-		1A000027 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A000008; };
-		1A000028 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A000009; };
-		1A000029 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A00000A; };
-		1A00002A /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A00000B; };
-		1A00002B /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A00000C; };
-		1A00002C /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A00000D; };
-		1A00002D /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A00000E; };
-		1A00002E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A00000F; };
-		1A00002F /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A000010; };
-		1A000030 /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A000011; };
+		1A000001 /* PluginProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A000001 /* PluginProcessor.cpp */; };
+		1A000002 /* PluginEditor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A000002 /* PluginEditor.cpp */; };
+		1A000003 /* include_juce_audio_basics.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2A000010 /* include_juce_audio_basics.mm */; };
+		1A000004 /* include_juce_audio_devices.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2A000011 /* include_juce_audio_devices.mm */; };
+		1A000005 /* include_juce_audio_formats.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2A000012 /* include_juce_audio_formats.mm */; };
+		1A000006 /* include_juce_audio_processors.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2A000013 /* include_juce_audio_processors.mm */; };
+		1A000007 /* include_juce_audio_utils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2A000014 /* include_juce_audio_utils.mm */; };
+		1A000008 /* include_juce_core.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2A000015 /* include_juce_core.mm */; };
+		1A000009 /* include_juce_data_structures.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2A000016 /* include_juce_data_structures.mm */; };
+		1A00000A /* include_juce_events.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2A000017 /* include_juce_events.mm */; };
+		1A00000B /* include_juce_graphics.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2A000018 /* include_juce_graphics.mm */; };
+		1A00000C /* include_juce_gui_basics.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2A000019 /* include_juce_gui_basics.mm */; };
+		1A00000D /* include_juce_gui_extra.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2A00001A /* include_juce_gui_extra.mm */; };
+		1A00000E /* include_juce_audio_plugin_client_VST3.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2A00001B /* include_juce_audio_plugin_client_VST3.mm */; };
+		1A00000F /* include_juce_audio_plugin_client_Standalone.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2A00001C /* include_juce_audio_plugin_client_Standalone.mm */; };
+		1A000020 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A000001 /* Cocoa.framework */; };
+		1A000021 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A000002 /* IOKit.framework */; };
+		1A000022 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A000003 /* Carbon.framework */; };
+		1A000023 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A000004 /* Accelerate.framework */; };
+		1A000024 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A000005 /* AudioToolbox.framework */; };
+		1A000025 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A000006 /* CoreAudio.framework */; };
+		1A000026 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A000007 /* CoreMIDI.framework */; };
+		1A000027 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A000008 /* QuartzCore.framework */; };
+		1A000028 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A000009 /* WebKit.framework */; };
+		1A000029 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A00000A /* Foundation.framework */; };
+		1A00002A /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A00000B /* CoreServices.framework */; };
+		1A00002B /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A00000C /* ApplicationServices.framework */; };
+		1A00002C /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A00000D /* CoreFoundation.framework */; };
+		1A00002D /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A00000E /* AppKit.framework */; };
+		1A00002E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A00000F /* Security.framework */; };
+		1A00002F /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A000010 /* CoreBluetooth.framework */; };
+		1A000030 /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A000011 /* CoreAudioKit.framework */; };
+		1A000031 /* include_juce_graphics_Harfbuzz.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A00001D /* include_juce_graphics_Harfbuzz.cpp */; };
+		1A000032 /* include_juce_graphics_Sheenbidi.c in Sources */ = {isa = PBXBuildFile; fileRef = 2A00001E /* include_juce_graphics_Sheenbidi.c */; };
+		1A000033 /* include_juce_core_CompilationTime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A00001F /* include_juce_core_CompilationTime.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,7 +91,7 @@
 		3A00000F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		3A000010 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		3A000011 /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
-		4A000001 /* XRVST_Plugins.vst3 */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XRVST_Plugins.vst3; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A000001 /* XRVST_Plugins - VST3.vst3 */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "XRVST_Plugins - VST3.vst3"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,7 +197,7 @@
 		6A000005 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4A000001 /* XRVST_Plugins.vst3 */,
+				4A000001 /* XRVST_Plugins - VST3.vst3 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -226,7 +226,7 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-7A000001 /* XRVST_Plugins - VST3 */ = {
+		7A000001 /* XRVST_Plugins - VST3 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A000001 /* Build configuration list for PBXNativeTarget "XRVST_Plugins - VST3" */;
 			buildPhases = (
@@ -238,9 +238,9 @@
 			);
 			dependencies = (
 			);
-name = "XRVST_Plugins - VST3";
+			name = "XRVST_Plugins - VST3";
 			productName = XRVST_Plugins;
-			productReference = 4A000001 /* XRVST_Plugins.vst3 */;
+			productReference = 4A000001 /* XRVST_Plugins - VST3.vst3 */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -421,8 +421,8 @@ name = "XRVST_Plugins - VST3";
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				GENERATE_INFOPLIST_FILE = YES;
 				GCC_PREFIX_HEADER = "";
+				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/JuceLibraryCode",
@@ -433,13 +433,14 @@ name = "XRVST_Plugins - VST3";
 				INFOPLIST_KEY_CFBundleDisplayName = "Broadband Compressor V2";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright (c) 2024 Meta Audio";
 				INSTALL_PATH = "$(HOME)/Library/Audio/Plug-Ins/VST3";
+				JUCE_DIR = /Users/kjolly/Documents/Github/JUCE;
 				LIBRARY_STYLE = Bundle;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-std=c++17",
 				);
-PRODUCT_BUNDLE_IDENTIFIER = com.meta.xrvst-plugins;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.meta.xrvst-plugins";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				WRAPPER_EXTENSION = vst3;
@@ -451,8 +452,8 @@ PRODUCT_BUNDLE_IDENTIFIER = com.meta.xrvst-plugins;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				GENERATE_INFOPLIST_FILE = YES;
 				GCC_PREFIX_HEADER = "";
+				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/JuceLibraryCode",
@@ -463,13 +464,14 @@ PRODUCT_BUNDLE_IDENTIFIER = com.meta.xrvst-plugins;
 				INFOPLIST_KEY_CFBundleDisplayName = "Broadband Compressor V2";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright (c) 2024 Meta Audio";
 				INSTALL_PATH = "$(HOME)/Library/Audio/Plug-Ins/VST3";
+				JUCE_DIR = /Users/kjolly/Documents/Github/JUCE;
 				LIBRARY_STYLE = Bundle;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-std=c++17",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.meta.xrvst-plugins;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.meta.xrvst-plugins";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				WRAPPER_EXTENSION = vst3;
